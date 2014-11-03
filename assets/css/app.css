@@ -69,3 +69,48 @@ table {
   box-sizing: border-box; }
 
 /* SITE STYLES ================================= */
+html {
+  background: -webkit-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* IE10 */
+  background: -o-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* W3C */
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "futura-pt",sans-serif; }
+
+a {
+  color: #fefefe;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  a:hover {
+    color: #3498db; }
+
+header h1 {
+  text-align: center;
+  color: #fefefe;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem; }
+  footer p {
+    text-align: center;
+    line-height: 1.5;
+    color: #fefefe;
+    font-size: 0.8rem;
+    font-family: helvetica, "trebuchet MS", arial, sans-serif; }
