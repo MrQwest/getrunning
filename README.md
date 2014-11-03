@@ -12,14 +12,14 @@ If you want to add to the pile, submit a pull request to the run.json file with 
 
 If you're submitting an image or video, drop in the URL, if you're submitting a quote, tap out the actual quote.
 
-## via
+## source
 
 Add in a name / title for the `via` link if you have one...
 
-## viaurl
+## sourceURL
 
 ... and the `URL` of where it came from.
 
 
-Let's get running! I'm on (Strava)[http://app.strava.com/athletes/694880] if you want to follow along and give me virtual high fives or mock me for all eternity when you notice my lack of running!
+Let's get running! I'm on [Strava](http://app.strava.com/athletes/694880) if you want to follow along and give me virtual high fives or mock me for all eternity when you notice my lack of running!
 
