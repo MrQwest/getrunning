@@ -1,7 +1,9 @@
 {
     "debug": false,
     "lintScripts": false,
-    "preprocessorLocations": "assets",
+    "preprocessorLocations": [
+        "assets"
+    ],
     "preprocessorScriptOutput": "assets/scripts",
     "preprocessorStyleOutput": "assets/css",
     "projectName": "Seed",
@@ -18,25 +20,28 @@
     "simpleModeFileTypes": null,
     "modelSource": null,
     "domain": null,
-    "convertHtmlOutput": null,
-    "convertHtmlExtension": ".html",
     "followLeader": true,
     "routes": null,
     "customRuby": false,
     "customRubyPath": null,
     "remoteDebugPort": 0,
-    "useNodeSass": false,
     "optimiseImages": true,
     "password": null,
-    "ignoreDir": "ignore",
+    "ignoreDir": [
+        "ignore"
+    ],
     "customTodos": [
-    {
-        "fileTypes": "php,cs",
-        "regex": "(?<=/[*] TODO:).*?(?=[*]/)"
-    }],
-    "ftpSettings": null,
+        {
+            "fileTypes": "php,cs",
+            "regex": "(?\u003c=/[*] TODO:).*?(?=[*]/)"
+        }
+    ],
     "autoPrefixer": null,
     "sass": null,
     "sitemap": false,
-    "gitHubPages": null
+    "convertHtml": {
+        "extension": ".html",
+        "path": null,
+        "relativePath": false
+    }
 }
