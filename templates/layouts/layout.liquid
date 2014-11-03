@@ -27,6 +27,8 @@
         {{ "assets/css/app.css" | asset_url | stylesheet_tag }}
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
+        <script src="//use.typekit.net/xyb8smm.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
     </head>
     <body class="{{ mixture.url | slugify }}" >
         <div id="wrapper">
