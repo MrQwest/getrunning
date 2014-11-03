@@ -14,9 +14,18 @@ $.getJSON( "run.json", function( data ) {
   console.log(data[randomItem].type);
 
   if (data[randomItem].type == "quote") {
-  	$('#content').html("<p class='quote'>quote" + data[randomItem].resource + "</p>");
+  	$('#content').html("<p class='quote'>" + data[randomItem].resource + "</p>");
   } else if (data[randomItem].type == "video") {
-  	$('#content').html("<p>video" + data[randomItem].resource + "</p>");
+  	// if youtube video, strip out unneeded sections and feed into embed code.
+  	var video_id = data[randomItem].resource.split('v=')[1];
+	var ampersandPosition = video_id.indexOf('&');
+	if(ampersandPosition != -1) {
+	  video_id = video_id.substring(0, ampersandPosition);
+	}
+	console.log(video_id);
+	$('#content').append("<div class='videoWrapper'><iframe width=560 height=315 src='//www.youtube.com/embed/" + video_id + "' frameborder='0' allowfullscreen></iframe></div>");
+
+	// $('#content').html("<p>" + data[randomItem].resource + "</p>");
   } else if (data[randomItem].type == "image") {
   	$('#content').html("<p>" + data[randomItem].resource + "</p>");
   } else {
