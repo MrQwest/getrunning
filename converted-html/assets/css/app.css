@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* nav block > http://csswizardry.com/2011/09/the-nav-abstraction/ */
+.nav {
+  list-style: none;
+  margin-left: 0; }
+
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+/* media block > http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ */
+.media {
+  margin: 10px; }
+
+.media, .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1; }
+
+.media .img {
+  float: left;
+  margin-right: 10px; }
+
+.media .img img {
+  display: block; }
+
+.media .imgExt {
+  float: right;
+  margin-left: 10px; }
+
+/* endif */
+/* GENERAL STYLES ================================= */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* SITE STYLES ================================= */
+html {
+  background: -webkit-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* IE10 */
+  background: -o-linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(180deg, #add100 10%, #7b920a 90%);
+  /* W3C */
+  height: 100%; }
+
+#content {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  text-align: center; }
+  #content iframe {
+    width: 100% !important;
+    height: 100% !important; }
+  #content .quote {
+    color: #fefefe;
+    font-family: helvetica, "trebuchet MS", arial, sans-serif;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "futura-pt",sans-serif; }
+
+a {
+  color: #fefefe;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  a:hover {
+    color: #3498db; }
+
+header h1 {
+  text-align: center;
+  color: #fefefe;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem; }
+  footer p {
+    text-align: center;
+    line-height: 1.5;
+    color: #fefefe;
+    font-size: 0.8rem;
+    font-family: helvetica, "trebuchet MS", arial, sans-serif; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
