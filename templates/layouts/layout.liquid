@@ -24,7 +24,7 @@
 
         <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
         <!-- Styles -->
-        {{ "assets/css/app.css" | asset_url | stylesheet_tag }}
+        {{ "/labs/getrunning/assets/css/app.css" | asset_url | stylesheet_tag }}
         <!-- Style block allowing child pages to inject their own styles -->
         {% block styles %}{% endblock %}
         <script src="//use.typekit.net/xyb8smm.js"></script>
@@ -47,7 +47,7 @@
         <!-- Script block allowing child pages to inject their own scripts -->
         {% block scripts %}{% endblock %}
 
-        {{ "run.js" | asset_url | script_tag }}
+        {{ "/labs/getrunning/assets/scripts/run.js" | asset_url | script_tag }}
 
         <!-- google analytics -->
         <!-- TODO: set up analytics -->
