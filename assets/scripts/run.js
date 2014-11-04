@@ -27,7 +27,7 @@ $.getJSON( "run.json", function( data ) {
 
 	// $('#content').html("<p>" + data[randomItem].resource + "</p>");
   } else if (data[randomItem].type == "image") {
-  	$('#content').html("<p>" + data[randomItem].resource + "</p>");
+  	$('#content').html("<img src=" + data[randomItem].resource + " />");
   } else {
   	$('#content').html("<p>Just Run!</p>");
   };
