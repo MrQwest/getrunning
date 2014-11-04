@@ -7,14 +7,17 @@ $.getJSON( "run.json", function( data ) {
   itemsLength = items.length;
   randomItem = Math.floor(Math.random() * itemsLength)
 
+  $('#content').addClass(data[randomItem].type);
  
-  // show number of items in json array.
-  console.log("there are " + itemsLength + " items in the array");
-  console.log("The random number is " + randomItem);
-  console.log(data[randomItem].type);
 
   if (data[randomItem].type == "quote") {
-  	$('#content').html("<p class='quote'>" + data[randomItem].resource + "</p>");
+    if (data[randomItem].sourceurl == false) {
+      $('#content').html("<div class='quote'><p>" + data[randomItem].resource + "</p><p class='source'>&mdash; " + data[randomItem].source + "</p></div>");  
+    } else {
+      $('#content').html("<div class='quote'><p>" + data[randomItem].resource + "</p><p class='source'>&mdash; <a href='" + data[randomItem].sourceurl + "'>" + data[randomItem].source + "</a></p></div>");
+    };
+  	
+
   } else if (data[randomItem].type == "video") {
   	// if youtube video, strip out unneeded sections and feed into embed code.
   	var video_id = data[randomItem].resource.split('v=')[1];
@@ -33,4 +36,7 @@ $.getJSON( "run.json", function( data ) {
   };
 
   $('#content').append(items[randomItem].type);
+
+  var bodyHeight = window.innerHeight;
+  $('#content').css({"height":bodyHeight - 107});
 });

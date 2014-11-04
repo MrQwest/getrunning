@@ -32,17 +32,25 @@ html {
 	margin: 0 auto;
 	padding-top: 3rem;
 	text-align: center;
+	display: table;
 	iframe {
 		width: 100%!important;
 		height: 100%!important;
 	}
 	.quote {
 		color: $white;
-		font-family: helvetica, "trebuchet MS", arial, sans-serif;
 		font-size: 3.2rem;
 		line-height: 1.2;
 		font-style: italic;
+		font-family: "ff-meta-serif-web-pro",serif;
+		text-shadow: 0 0 10px rgba(0,0,0,.3);
+		display: table-cell; 
+  		vertical-align: middle; 
 	}
+}
+
+#content.video {
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,4 +102,12 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.source {
+    padding-top: 2rem;
+    text-align: right;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: georgia;
 }
