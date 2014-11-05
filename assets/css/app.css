@@ -93,13 +93,19 @@ html {
     height: 100% !important; }
   #content .quote {
     color: #fefefe;
-    font-size: 3.2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     font-style: italic;
     font-family: "ff-meta-serif-web-pro",serif;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: table-cell;
     vertical-align: middle; }
+    @media (min-width: 47.5em) {
+      #content .quote {
+        font-size: 3.2rem; } }
+  #content img {
+    max-width: 100%; }
 
 #content.video {
   display: block; }

@@ -39,13 +39,21 @@ html {
 	}
 	.quote {
 		color: $white;
-		font-size: 3.2rem;
+		padding: 1rem;
+		font-size: 1.2rem;
 		line-height: 1.2;
 		font-style: italic;
 		font-family: "ff-meta-serif-web-pro",serif;
 		text-shadow: 0 0 10px rgba(0,0,0,.3);
 		display: table-cell; 
   		vertical-align: middle; 
+
+  		@include mq($medium) {
+	        font-size: 3.2rem;
+	    }
+	}
+	img {
+		max-width: 100%;
 	}
 }
 
